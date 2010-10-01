@@ -1,0 +1,14 @@
+--- This file is part of LuaDist project
+
+name = "lunit"
+version = "0.5"
+
+desc = "Lunit is a unit testing framework for lua, written in Lua."
+author = "Michael Roth"
+url = "http://www.nessie.de/mroth/lunit/"
+license = "MIT/X11"
+maintainer = "Peter Drahoš"
+
+depends = {
+	"lua ~> 5.1"
+}
