@@ -1,16 +1,18 @@
-# Copyright (C) 2007-2009 LuaDist.
+# Copyright (C) 2007-2012 LuaDist.
 # Created by Peter Drahoš
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-PROJECT(lunit NONE)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-INCLUDE(dist.cmake)
+project ( lunit NONE )
+cmake_minimum_required ( VERSION 2.8 )
+include ( cmake/dist.cmake )
+include ( lua )
 
 # Install all files and documentation
-INSTALL (FILES lunit-console.lua lunit.lua DESTINATION ${INSTALL_LMOD})
-INSTALL (FILES ANNOUNCE DOCUMENTATION CHANGES LICENSE README DESTINATION ${INSTALL_DATA})
-INSTALL (FILES example.lua DESTINATION ${INSTALL_EXAMPLE})
-INSTALL (FILES lunit-tests.lua DESTINATION ${INSTALL_TEST})
-INSTALL (FILES lunit DESTINATION ${INSTALL_FOO})
+install_lua_module ( lunit-console.lua )
+install_lua_module ( lunit lunit.lua )
+install_data ( ANNOUNCE DOCUMENTATION CHANGES LICENSE README )
+install_example ( example.lua )
+install_test ( lunit-tests.lua )
+install_foo ( lunit )
