@@ -10,9 +10,9 @@ include ( cmake/dist.cmake )
 include ( lua )
 
 # Install all files and documentation
-install_lua_module ( lunit-console.lua )
+install_lua_module ( lunit-console lunit-console.lua )
+install_lua_module ( lunit-tests lunit-tests.lua )
 install_lua_module ( lunit lunit.lua )
 install_data ( ANNOUNCE DOCUMENTATION CHANGES LICENSE README )
 install_example ( example.lua )
-install_test ( lunit-tests.lua )
 install_foo ( lunit )
