@@ -1,0 +1,38 @@
+type = "x86"
+arch = "Windows"
+author = "Michael Roth"
+depends = {
+[[lua ~> 5.1]],
+}
+
+desc = "Lunit is a unit testing framework for lua, written in Lua."
+version = "0.5"
+maintainer = "Peter Drahoš"
+files = {
+Runtime = {
+[[lib\lua\lunit-console.lua]],
+[[lib\lua\lunit-tests.lua]],
+[[lib\lua\lunit.lua]],
+}
+,
+Example = {
+[[share\lunit\example\example.lua]],
+}
+,
+Data = {
+[[share\lunit\ANNOUNCE]],
+[[share\lunit\DOCUMENTATION]],
+[[share\lunit\CHANGES]],
+[[share\lunit\LICENSE]],
+[[share\lunit\README]],
+}
+,
+Other = {
+[[share\lunit\etc\lunit]],
+}
+,
+}
+
+url = "http://www.nessie.de/mroth/lunit/"
+name = "lunit"
+license = "MIT/X11"
